@@ -1,0 +1,68 @@
+/* stylesheet.css*/
+
+#sign-in { 
+    display: block;
+    margin: auto;
+}
+
+.rad-navbar {
+    position: absolute;
+}
+
+img {
+    max-width: 35%;
+    max-height: 45%;
+    display: block;
+    margin: auto;
+}
+
+.navbar {
+    width: 550px;
+    height: 52px;
+    margin: 0 auto;
+    position: absolute;
+}
+
+/* Don't remember why position: absolute; is included in .navbar*/
+
+#container {
+    width: 550px;
+    height: 52px;
+    position: absolute;
+}
+
+#page-menu {
+    height: 84px;
+    position: absolute;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+ul#navbar-items {
+    list-style: none;
+}
+
+ul#navbar-items li {
+    display: inline;
+    padding-left: 23px;
+    text-align: center;
+}
+
+li:hover {
+    background-color: red;
+}
+
+#liked-posts {
+    width: 25%;
+    text-align: left
+}
+
+#whats-hot {
+    width: 25%;
+    text-align: left;
+}
+
+/* So far, the above column merges with the navbar. To be fixed in the future*/
