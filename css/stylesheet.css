@@ -5,6 +5,10 @@
     margin: auto;
 }
 
+#the-site {
+    display: block;
+}
+
 .rad-navbar {
     position: absolute;
 }
