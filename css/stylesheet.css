@@ -24,7 +24,7 @@ img {
     width: 550px;
     height: 52px;
     margin: 0 auto;
-    position: absolute;
+    position: relative;
 }
 
 /* Don't remember why position: absolute; is included in .navbar*/
