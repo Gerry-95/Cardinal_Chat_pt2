@@ -32,12 +32,12 @@ img {
 #container {
     width: 550px;
     height: 52px;
-    position: relative;
+    position: absolute;
 }
 
 #page-menu {
     height: 84px;
-    position: relative;
+    position: absolute;
 }
 
 .table {
