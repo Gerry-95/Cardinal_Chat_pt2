@@ -60,11 +60,9 @@ li:hover {
 }
 
 #liked-posts {
-    text-align: center;
+    text-align: left;
 }
 
 #whats-hot {
     text-align: center;
 }
-
-/* So far, the above column merges with the navbar. To be fixed in the future*/
