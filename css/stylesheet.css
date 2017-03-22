@@ -69,15 +69,16 @@ li:hover {
 
 button.latest {
     display: block;
-    margin: auto;
+    margin-top: 10px;
+    margin-right: 75px;
 }
 
 button.filter {
     display: block;
-    margin: auto;
+    margin-top: 10px;
 }
 
 button.talk {
     display: block;
-    margin: auto;
+    margin-top: 10px;
 }
