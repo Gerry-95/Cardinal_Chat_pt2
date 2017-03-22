@@ -67,6 +67,8 @@ li:hover {
 
 button.latest {
     display: block;
+    width: 65px;
+    height: 34px;
     margin: -20px -50px; 
     position:relative;
     top:50%; 
@@ -75,6 +77,8 @@ button.latest {
 
 button.filter {
     display: block;
+    width: 65px;
+    height: 34px;
     margin: -20px -50px; 
     position:relative;
     top:50%; 
@@ -83,6 +87,8 @@ button.filter {
 
 button.talk {
     display: block;
+    width: 65px;
+    height: 34px;
     margin: -20px -50px; 
     position:relative;
     top:50%; 
