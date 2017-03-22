@@ -27,8 +27,6 @@ img {
     position: relative;
 }
 
-/* Don't remember why position: absolute; is included in .navbar*/
-
 #container {
     width: 550px;
     height: 52px;
@@ -67,7 +65,7 @@ li:hover {
     text-align: center;
 }
 
-.latest {
+button.latest {
     display: block;
     margin: -20px -50px; 
     position:relative;
@@ -75,7 +73,7 @@ li:hover {
     left:50%;
 }
 
-.filter {
+button.filter {
     display: block;
     margin: -20px -50px; 
     position:relative;
@@ -83,7 +81,7 @@ li:hover {
     left:50%;
 }
 
-.talk {
+button.talk {
     display: block;
     margin: -20px -50px; 
     position:relative;
