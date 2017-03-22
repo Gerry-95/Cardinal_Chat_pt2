@@ -67,18 +67,18 @@ li:hover {
     text-align: center;
 }
 
-button.latest {
+.latest {
     display: block;
     margin-top: 10px;
     margin-right: 75px;
 }
 
-button.filter {
+.filter {
     display: block;
     margin-top: 10px;
 }
 
-button.talk {
+.talk {
     display: block;
     margin-top: 10px;
 }
