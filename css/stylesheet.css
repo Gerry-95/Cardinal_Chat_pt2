@@ -67,17 +67,17 @@ li:hover {
     text-align: center;
 }
 
-.latest {
+button.latest {
     display: block;
     margin: 0 auto;
 }
 
-.filter {
+button.filter {
     display: block;
     margin: 0 auto;
 }
 
-.talk {
+button.talk {
     display: block;
     margin: 0 auto;
 }
