@@ -69,16 +69,24 @@ li:hover {
 
 .latest {
     display: block;
-    margin-top: 10px;
-    margin-right: 75px;
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
 }
 
 .filter {
     display: block;
-    margin-top: 10px;
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
 }
 
 .talk {
     display: block;
-    margin-top: 10px;
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
 }
