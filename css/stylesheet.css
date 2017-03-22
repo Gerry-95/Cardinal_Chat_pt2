@@ -66,3 +66,18 @@ li:hover {
 #whats-hot {
     text-align: center;
 }
+
+.latest {
+    display: block;
+    margin: 0 auto;
+}
+
+.filter {
+    display: block;
+    margin: 0 auto;
+}
+
+.talk {
+    display: block;
+    margin: 0 auto;
+}
