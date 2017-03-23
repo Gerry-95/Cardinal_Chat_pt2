@@ -33,3 +33,15 @@ function showHomePage() {
         alert("Welcome, " + user.displayName + "! Have a look around and see what's changed.");
         
 }
+
+function showLatest() {
+    console.log("Latest feed");
+};
+
+function filterPosts() {
+    console.log("Posts from other users");
+};
+
+function commentate() {
+    console.log("What's up?");
+};
