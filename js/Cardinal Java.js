@@ -43,5 +43,5 @@ function filterPosts() {
 };
 
 function commentate() {
-    console.log("What's up?");
+    location.href="commentate.html"
 };
