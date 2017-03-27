@@ -47,5 +47,5 @@ function commentate() {
 };
 
 function postForm() {
-    
+    console.log("thing");
 };
