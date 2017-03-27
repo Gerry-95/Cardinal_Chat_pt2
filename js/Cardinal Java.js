@@ -45,3 +45,7 @@ function filterPosts() {
 function commentate() {
     location.href="commentate.html"
 };
+
+function postForm() {
+    
+};
