@@ -1,5 +1,6 @@
 var provider = new firebase.auth.GoogleAuthProvider();
 var user;
+var selectedFile;
 
 $( document ).ready(function() {
     $("#home").hide();
@@ -48,9 +49,10 @@ function commentate() {
 
 function postForm() {
     // Create a root reference
-    var filename = document.getElementByName("Title").innerHTML
+    selectedFile = document.getElement("form").innerHTML;
+    var filename = selectedFile
     var storageRef = firebase.storage().ref('/userPosts/' + filename);
-    var uploadTask = storageRef.child.put(document.getElement("form").innerHTML);
+    var uploadTask = storageRef.child.put();
     
     // Register three observers:
     // 1. 'state_changed' observer, called any time the state changes
