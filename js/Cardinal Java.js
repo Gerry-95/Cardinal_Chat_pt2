@@ -26,7 +26,11 @@ function signIn() {
     var credential = error.credential;
     // ...
     });
-}
+    firebase.database().ref('Users/' + user.uid).set({
+        name: user.displayName,
+        email: user.email,
+    });
+};
 
 function showHomePage() {
         $("#login").hide();
