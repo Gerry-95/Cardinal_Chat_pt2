@@ -26,16 +26,17 @@ function signIn() {
     var credential = error.credential;
     // ...
     });
+    
+};
+
+function showHomePage() {
+    $("#login").hide();
+    $("#home").show();
+    alert("Welcome, " + user.displayName + "! Have a look around and see what's changed.");
     firebase.database().ref('Users/' + user.uid).set({
         name: user.displayName,
         email: user.email,
     });
-};
-
-function showHomePage() {
-        $("#login").hide();
-        $("#home").show();
-        alert("Welcome, " + user.displayName + "! Have a look around and see what's changed.");
         
 }
 
