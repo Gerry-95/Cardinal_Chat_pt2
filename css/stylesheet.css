@@ -8,8 +8,9 @@
 .card {
     outline-style: solid;
     position: absolute;
-    top: 200px;
-    left: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
   
 .panel meta {
