@@ -11,8 +11,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
   
-  .meta {
+.panel meta {
     top: 0;
     left: 0;
     z-index: 1;
@@ -22,24 +23,23 @@
     transform: translateX(0);
     padding: 2rem 4rem;
     border-right: 1px solid transparent;
+}
     
-    .avatar { 
-      border-radius: 50%;
-    }
+avatar {
+    border-radius: 50%;
+}
 
-    .name {
-      font-size: 2rem;
-      text-align: center;
-      margin-top: 1rem;
-      font-weight: 300;
-    }
+.name {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 300;
+}
     
-    .title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin: 1rem 0 0;
-    }
-  }
+.identity {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem 0 0;
 }
 
 .rad-navbar {
