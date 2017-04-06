@@ -8,8 +8,8 @@
 .card {
     outline-style: solid;
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 200px;
+    left: 200px;
     transform: translate(-50%, -50%);
 }
   
