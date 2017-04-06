@@ -8,8 +8,8 @@
 .card {
     outline-style: solid;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 25%;
     transform: translate(-50%, -50%);
 }
   
@@ -27,8 +27,8 @@
     
 avatar {
     border-radius: 50%;
-    width: 50%;
-    height: 50%;
+    width: 128px;
+    height: 128px;
 }
 
 .name {
