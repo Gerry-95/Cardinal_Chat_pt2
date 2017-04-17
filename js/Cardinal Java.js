@@ -1,6 +1,6 @@
 var provider = new firebase.auth.GoogleAuthProvider();
 var user;
-var selectedFile;
+var yourpost = document.getElementById("yourpost");
 
 $( document ).ready(function() {
     $("#home").hide();
@@ -54,40 +54,24 @@ function commentate() {
 
 
 
-function postForm() {
-    $("#postfield").on("change", function(event) {
-    selectedFile = event.target.files[0];
-    
-});
-    var filename = selectedFile.name;
-    var storageRef = firebase.storage().ref('/posts/' + filename);
-    var message = document.getElementById("postfield").innerHTML;
-    ref.putString(message).then(function(snapshot) {
-        console.log("Uploaded a raw string");
-    });
-    var uploadTask = storageRef.put(selectedFile);
-    // Register three observers:
-    // 1. 'state_changed' observer, called any time the state changes
-    // 2. Error observer, called on failure
-    // 3. Completion observer, called on successful completion
-    uploadTask.on('state_changed', function(snapshot){
-        // Observe state change events such as progress, pause, and resume
-        // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-        var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            console.log('Upload is ' + progress + '% done');
-        switch (snapshot.state) {
-            case firebase.storage.TaskState.PAUSED: // or 'paused'
-                console.log('Upload is paused');
-            break;
-            case firebase.storage.TaskState.RUNNING: // or 'running'
-                console.log('Upload is running');
-            break;
-            }
-    }, function(error) {
-        // Handle unsuccessful uploads
-    }, function() {
-        // Handle successful uploads on complete
-        // For instance, get the download URL: https://firebasestorage.googleapis.com/...
-        var downloadURL = uploadTask.snapshot.downloadURL;
-    });
+function postForm(uid, username, picture, title, body) {
+    // A post entry.
+    var postData = {
+        author: username,
+        uid: uid,
+        body: body,
+        title: title,
+        starCount: 0,
+        authorPic: picture
+    };
+
+    // Get a key for a new Post.
+    var newPostKey = firebase.database().ref().child('posts').push().key;
+
+    // Write the new post's data simultaneously in the posts list and the user's post list.
+    var updates = {};
+    updates['/posts/' + newPostKey] = postData;
+    updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+
+    return firebase.database().ref().update(updates);
 };
