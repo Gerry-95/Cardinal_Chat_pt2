@@ -1,6 +1,6 @@
 var provider = new firebase.auth.GoogleAuthProvider();
 var user;
-var yourpost = document.getElementById("yourpost");
+var yourpost = document.getElementById("postfield");
 
 $( document ).ready(function() {
     $("#home").hide();
