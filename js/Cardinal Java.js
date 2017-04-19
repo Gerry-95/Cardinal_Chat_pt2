@@ -60,4 +60,9 @@ function writeNewPost(title, body) {
     var firebaseRef = firebase.database().ref();
     
     firebaseRef.child(title).set(body);
+    location.href="index.html"
+    
+    if (location.href = "index.html") {
+        showHomePage();
+    }
 };
