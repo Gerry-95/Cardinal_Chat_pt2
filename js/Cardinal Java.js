@@ -1,6 +1,7 @@
 var provider = new firebase.auth.GoogleAuthProvider();
 var user;
 var yourpost = document.getElementById("postfield");
+var submitBtn = document.getElementById("submitBtn");
 
 $( document ).ready(function() {
     $("#home").hide();
@@ -49,32 +50,14 @@ function filterPosts() {
 };
 
 function commentate() {
-    location.href="commentate.html";
+    location.href="commentate.html"
 };
 
 
 
-function writeNewPost(uid, username, picture, title, body) {
-    // A post entry.
-    var postData = {
-        author: username,
-        uid: uid,
-        body: body,
-        title: title,
-        starCount: 0,
-        authorPic: picture
-    };
-
-    // Get a key for a new Post.
-    var newPostKey = firebase.database().ref().child('posts').push().key;
-
-    // Write the new post's data simultaneously in the posts list and the user's post list.
-    var updates = {};
-    updates['/posts/' + newPostKey] = postData;
-    updates['/user-posts/' + uid + '/' + newPostKey] = postData;
-
-    return firebase.database().ref().update(updates);
+function writeNewPost(title, body) {
     
-    alert("Write a post");
-    location.href="index.html";
+    var firebaseRef = firebase.database().ref();
+    
+    firebaseRef.child(title).set(body);
 };
