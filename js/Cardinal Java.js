@@ -49,7 +49,7 @@ function filterPosts() {
 };
 
 function commentate() {
-    location.href="commentate.html"
+    location.href="commentate.html";
 };
 
 
@@ -74,5 +74,7 @@ function writeNewPost(uid, username, picture, title, body) {
     updates['/user-posts/' + uid + '/' + newPostKey] = postData;
 
     return firebase.database().ref().update(updates);
-    alert("Write a post")
+    
+    alert("Write a post");
+    location.href="index.html";
 };
