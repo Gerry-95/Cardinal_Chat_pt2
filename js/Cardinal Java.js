@@ -54,7 +54,7 @@ function commentate() {
 
 
 
-function postForm(uid, username, picture, title, body) {
+function writeNewPost(uid, username, picture, title, body) {
     // A post entry.
     var postData = {
         author: username,
@@ -74,4 +74,5 @@ function postForm(uid, username, picture, title, body) {
     updates['/user-posts/' + uid + '/' + newPostKey] = postData;
 
     return firebase.database().ref().update(updates);
+    alert("Write a post")
 };
