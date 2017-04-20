@@ -2,6 +2,7 @@ var provider = new firebase.auth.GoogleAuthProvider();
 var user;
 var yourpost = document.getElementById("postfield");
 var submitBtn = document.getElementById("submitBtn");
+var firebaseRef = firebase.database();
 
 $( document ).ready(function() {
     $("#home").hide();
@@ -56,8 +57,6 @@ function commentate() {
 
 
 function writeNewPost(title, body) {
-    
-    var firebaseRef = firebase.database().ref();
     
     firebaseRef.child(title).set(body);
     location.href="index.html"
