@@ -127,6 +127,10 @@ button.talk {
     left:50%;
 }
 
-textarea {
+textarea.postTitle {
+    max-width: 555px;
+}
+
+textarea.postContent {
     max-width: 555px;
 }
