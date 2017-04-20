@@ -56,9 +56,12 @@ function commentate() {
 
 
 
-function writeNewPost(title, body) {
+function writeNewPost() {
     
-    firebaseRef.child(title).set(body);
+    var postTitle = document.getElementById("postTitle").innerHTML;
+    var postContent = document.getElementById("postContent").innerHTML;
+    
+    firebaseRef.child(postTitle).set(postContent);
     location.href="index.html"
     
     if (location.href = "index.html") {
