@@ -59,8 +59,8 @@ function commentate() {
 function writeNewPost() {
     
     console.log("Send data to firebase")
-    var postTitle = document.getElementById("postTitle").innerHTML;
-    var postContent = document.getElementById("postContent").innerHTML;
+    var postTitle = document.getElementById("postTitle").value;
+    var postContent = document.getElementById("postContent").value;
     
     firebaseRef.ref().child(postTitle).set(postContent);
     console.log(postTitle)
