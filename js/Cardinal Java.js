@@ -61,7 +61,7 @@ function writeNewPost() {
     var postTitle = document.getElementById("postTitle").innerHTML;
     var postContent = document.getElementById("postContent").innerHTML;
     
-    firebaseRef.child(postTitle).set(postContent);
+    firebaseRef.ref().child(postTitle).set(postContent);
     location.href="index.html"
     
     if (location.href = "index.html") {
