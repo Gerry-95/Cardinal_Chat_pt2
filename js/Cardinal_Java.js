@@ -63,4 +63,5 @@ function writeNewPost() {
     var postContent = document.getElementById("postContent").innerHTML;
     
     firebaseRef.ref().child(postTitle).set(postContent);
+    console.log(postTitle)
 };
