@@ -17,6 +17,7 @@ function signIn() {
         user = result.user;
         showHomePage();
         
+        retrieveUserInfo();
         // ...
     }).catch(function(error) {
     // Handle Errors here.
@@ -30,6 +31,11 @@ function signIn() {
     });
     
 };
+
+function retrieveUserInfo() {
+    $('userName').innerHTML = user.displayName;
+}
+
 
 function showHomePage() {
     $("#login").hide();
