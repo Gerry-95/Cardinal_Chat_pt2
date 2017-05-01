@@ -33,8 +33,7 @@ function signIn() {
 };
 
 function retrieveUserInfo() {
-    $('userName').innerHTML = user.displayName;
-    $("h1").html($('userName').innerHTML);
+    $('userName').text("" + user.displayName + "");
 }
 
 
