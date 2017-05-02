@@ -1,0 +1,124 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Bootstrap core css -->
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Main stylesheet for the project -->
+    
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+<div class="container" id="login">
+    <div class="row">
+        <div class="col-md-12">
+            <img class="img" src="Logomakr_9IppMa.png" style="width: 35%; height: 45%;">
+            <p style="text-align: center; font-size: 24px;"><strong>Welcome to Cardinal Chat!</strong></p>
+            <button type="button" id="sign-in" class="btn btn-primary" onclick="signIn();"><i class="fa fa-google-plus"></i> Sign-In With Google</button>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="home">
+    <div class="row">
+        <div class="col-md-12"><img class="img" src="Logomakr_9IppMa.png" style="width: 35%; height: 45%;"></div>
+    </div>
+    <div class="row" id="the-site">
+        <div id="liked-posts" class="col-md-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <section class="card">
+                      <figure class="panel meta">
+                        <picture>
+                          <img class="avatar" src="default_pic.jpeg"/>
+                        </picture>
+                        <figcaption>
+                          <h1 class="name" id="userName">Username</h1>
+                          <h3 class="identity"></h3>
+                        </figcaption>
+                      </figure>
+                    </section><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p><strong>Liked Posts</strong></p>
+                </div>
+            </div>
+        </div>
+        <div id="rad-navbar" class="col-md-6">
+            <div id="navbar" class="navbar navbar-default" role="navigation">
+                <div id="container" class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="page-menu" class="row; navbar-collapse collapse">
+                        <div class="col-md-12; table">
+                            <ul id ="navbar-items" class="nav navbar-nav">
+                                <li class="acitve">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="notifs.html">Notifications</a>
+                                </li>
+                                <li>
+                                    <a href="msgs.html">Messages</a>
+                                </li>
+                                <li>
+                                    <a href="group.html">Group Chat</a>
+                                </li>
+                            </ul>
+                            <!-- Above list puts text in the navbar that direct the user to other pages -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"><button type="button" id="latest" class="btn btn-default" onclick="showLatest();">Latest</button></div>
+                <div class="col-md-4"><button type="button" id="filter" class="btn btn-default" onclick="filterPosts();">Filter by User</button></div>
+                <div class="col-md-4"><button type="button" id="talk" class="btn btn-default" onclick="commentate();">Commentate</button></div>
+            </div>
+        </div>
+        <div id="whats-hot" class="col-md-3"><strong>WHAT'S HOT</strong></div>
+    </div>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBK4dCtU6CfTjcKqiBAknj28PSmRLO_CLA",
+    authDomain: "cardinal-chat.firebaseapp.com",
+    databaseURL: "https://cardinal-chat.firebaseio.com",
+    storageBucket: "cardinal-chat.appspot.com",
+    messagingSenderId: "446911068122"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/Cardinal_Java.js"></script>
+
+</body>
+</html>
