@@ -44,7 +44,7 @@ function showHomePage() {
 }
 
 function retrieveUserInfo() {
-    $('userName').text("" + user.displayName + "");
+    $('#userName').text("" + user.displayName + "");
 }
 
 function showLatest() {
