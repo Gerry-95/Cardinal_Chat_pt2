@@ -32,11 +32,6 @@ function signIn() {
     
 };
 
-function retrieveUserInfo() {
-    $('userName').text("" + user.displayName + "");
-}
-
-
 function showHomePage() {
     $("#login").hide();
     $("#home").show();
@@ -46,6 +41,10 @@ function showHomePage() {
         email: user.email,
     });
         
+}
+
+function retrieveUserInfo() {
+    $('userName').text("" + user.displayName + "");
 }
 
 function showLatest() {
