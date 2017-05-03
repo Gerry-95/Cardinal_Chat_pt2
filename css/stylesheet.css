@@ -92,7 +92,7 @@ li:hover {
     background-color: red;
 }
 
-#liked-posts {
+#like_field {
     position:absolute;
     top:60px;
     left:80px;
