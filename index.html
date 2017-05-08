@@ -49,7 +49,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <p id="like_field"><strong>Liked Posts</strong></p>
+                    <p><strong>Liked Posts</strong></p>
                 </div>
             </div>
         </div>
@@ -89,6 +89,13 @@
                 <div class="col-md-4"><button type="button" id="latest" class="btn btn-default" onclick="showLatest();">Latest</button></div>
                 <div class="col-md-4"><button type="button" id="filter" class="btn btn-default" onclick="filterPosts();">Filter by User</button></div>
                 <div class="col-md-4"><button type="button" id="talk" class="btn btn-default" onclick="commentate();">Commentate</button></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12; stream">
+                    <ol class="stream-items js-navigable-stream" id="stream-items-id">
+                        <!-- This is the area where posts will end up after being posted -->
+                    </ol>
+                </div>
             </div>
         </div>
         <div id="whats-hot" class="col-md-3"><strong>WHAT'S HOT</strong></div>
