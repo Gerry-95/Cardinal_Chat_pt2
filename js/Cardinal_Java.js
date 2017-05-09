@@ -74,12 +74,12 @@ function writeNewPost() {
     var newPost = document.createElement("li");
     document.getElementById("stream-items-id").appendChild(newPost)
     
-    var header = document.createElement("h1");
-    newPost.appendChild(header);
+    var h1 = document.createElement("h1");
+    newPost.appendChild(h1);
     
-    var content = document.createElement("p")
-    newPost.appendChild(conent);
+    var p = document.createElement("p")
+    newPost.appendChild(p);
     
-    header.innerHTML = postTitle;
-    content.innerHTML = postContent;
+    h1.innerHTML = postTitle;
+    p.innerHTML = postContent;
 };
