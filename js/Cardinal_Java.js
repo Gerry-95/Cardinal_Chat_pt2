@@ -70,4 +70,16 @@ function writeNewPost() {
     
     firebaseRef.ref().child(postTitle).set(postContent);
     console.log(postTitle)
+    
+    var newPost = document.createElement("li");
+    document.getElementById("stream-items-id").appendChild(newPost)
+    
+    var header = document.createElement("h1");
+    newPost.appendChild(header);
+    
+    var content = document.createElement("p")
+    newPost.appendChild(conent);
+    
+    header.innerHTML = postTitle;
+    content.innerHTML = postContent;
 };
