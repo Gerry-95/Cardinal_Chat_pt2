@@ -136,3 +136,15 @@ textarea.postTitle {
 textarea.postContent {
     max-width: 555px;
 }
+
+#stream-items-id > li {
+    list-style-type: none;
+}
+
+#stream-items-id > li > h1 {
+    
+}
+
+#stream-items-id > li > p {
+    
+}
